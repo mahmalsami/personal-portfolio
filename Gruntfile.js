@@ -237,7 +237,8 @@ module.exports = function (grunt) {
           return dest + src;
         }
       }]
-    },
+    }/*,
+    
     fontscss: {
       files: [
         {
@@ -247,6 +248,7 @@ module.exports = function (grunt) {
         }
       ]
     },
+
     iconscss: {
       files: [
         {
@@ -256,6 +258,7 @@ module.exports = function (grunt) {
         }
       ]
     }
+    */
   };
 
   gruntConfig.watch = {

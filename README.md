@@ -1,4 +1,4 @@
-# Renault - Edison
+# Personal portfolio
 
 01. <a href="#readme">Readme</a>
 02. <a href="#dependencies">Dependencies</a>
