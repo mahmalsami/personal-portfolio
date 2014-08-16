@@ -1,19 +1,19 @@
 {
-  "name": "renault-edison",
-  "title": "Renault Edison",
-  "description": "Renault Edison, started with Made",
+  "name": "personal-portfolio",
+  "title": "MAHMAL Sami",
+  "description": "Personal website",
   "version": "0.0.1",
-  "homepage": "https://github.digitas.fr/html/renault-edison",
+  "homepage": "https://github.com/mahmalsami/personal-portfolio/",
   "author": {
-    "name": "DIGITAS France",
-    "email": "frontend@digitas.fr"
+    "name": "MAHMAL Sami",
+    "email": "mahmalsami@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.digitas.fr:html/renault-edison.git"
+    "url": "git@github.com:mahmalsami/personal-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.digitas.fr/html/renault-edison/issues"
+    "url": "https://github.com/mahmalsami/personal-portfolio/issues"
   },
   "scripts": {
     "start": "node app/server.js"

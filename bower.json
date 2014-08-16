@@ -7,7 +7,7 @@
   "description": "personal portfolio",
   "main": "app/server.js",
   "license": "MIT",
-  "homepage": "https://github.digitas.fr/html/renault-edison",
+  "homepage": "https://github.com/mahmalsami/personal-portfolio/",
   "private": true,
   "ignore": [
     "**/.*",
