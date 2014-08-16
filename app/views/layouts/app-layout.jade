@@ -1,0 +1,88 @@
+include ../red-app/mixins/all
+
+block variables
+
+- if(typeof title === "undefined") title="Renault Edison"
+- if(typeof appcache === "undefined") appcache=null
+- if(typeof modules === "undefined") modules= []
+
+doctype
+//[if IE 8]><html lang="fr" class="no-js old-ie ie8"><![endif]
+//[if IE 9]><html lang="fr" class="no-js old-ie ie9"><![endif]
+//[if gt IE 9]><!
+html(class="no-js", lang="fr", appcache=appcache)
+  //<![endif]
+  head
+    meta(charset="utf-8")
+    title=title
+    //[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]
+    meta(name="description", content="")
+    meta(name="viewport", content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width")
+    meta(property="og:url", content="http://mahmalsami.com")
+    meta(property="og:title", content="MAHMAL Sami Public Card")
+    meta(property="og:image", content="http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2013/5/10/1368182623745/Sports-picture-of-the-day-006.jpg")
+    meta(property="og:site_name", content="MAHMAL Sami")
+    meta(property="og:type", content="website")
+
+    // build:css stylesheets/red-app.min.css
+    link(rel="stylesheet", href="stylesheets/red-app.css")
+    // endbuild
+
+    // build:css stylesheets/red-header.min.css
+    link(rel="stylesheet", href="stylesheets/red-header.css")
+    // endbuild
+    // build:css stylesheets/red-footer.min.css
+    link(rel="stylesheet", href="stylesheets/red-footer.css")
+    // endbuild
+
+    block module-stylesheets
+      each module in modules
+        +banner('build:css stylesheets/' + module + '.min.css')
+        link(rel="stylesheet", href="stylesheets/#{module}.css")
+        +banner('endbuild')
+
+    link(rel="apple-touch-icon-precomposed", href="images/icons/apple-touch-icon.png")
+    link(rel="shortcut icon", href="favicon.png")
+
+    // build:js javascripts/libs/head.min.js
+    script(src="javascripts/libs/head.js")
+    // endbuild
+    script(src="javascripts/red-app-settings.js")
+
+  body
+
+    include ../red-header/content
+    block body-content
+    include ../red-footer/content
+
+    // build:js javascripts/libs/vendor.min.js
+    script(src="javascripts/libs/vendor.js")
+    // endbuild
+
+    // build:js javascripts/red-app.min.js
+    script(src="javascripts/red-app.js")
+    // endbuild
+
+    // build:js javascripts/red-header.min.js
+    script(src="javascripts/red-header.js")
+    // endbuild
+
+    // build:js javascripts/red-footer.min.js
+    script(src="javascripts/red-footer.js")
+    // endbuild
+
+
+
+    block module-scripts
+      each module in modules
+        +banner('build:js javascripts/' + module + '.min.js')
+        script(src="javascripts/#{module}.js")
+        +banner('endbuild')
+
+    // Facebook
+    #fb-root
+
+    // Tracking
+    script
+
+      console.log("homepage loog!");

@@ -1,0 +1,61 @@
+
+//- # LINK MIXIN
+
+//- A mixin to easy create accessible links by automatically filling the link's title
+//- The mixin's attributes, if present, are applied on the link element.
+
+//- -----------------------------------------
+
+//- ## BEWARE
+//- The link text CANNOT CONTAIN ( PARENTHESIS )
+//- https://github.com/visionmedia/jade/issues/837
+
+//- -----------------------------------------
+
+//- ## PARAMS
+
+//- * @param {icon}
+//-   icons suffix, use `twitter` rather than `icon-twitter`.
+//-   set to a falsy value for no icon
+
+//- * @param {title}
+//-   mandatory, link text and title. No parenthesis or Jade breaks.
+
+//- * @param {href}
+//-   optional, default will be set to `#`
+
+//- * @param {text}
+//-   text of the link
+//-   optional, default will be replaced by the title param
+
+//- -----------------------------------------
+
+//- ## USAGE EXAMPLE
+
+//- * Simple link, no icon, default href
+//-   `h1: mixin link(0, "Le groupe")`
+
+//- * Simple link, no icon
+//-   `h1: mixin link(0, "Le groupe", "index.html")`
+
+//- * Icon link
+//-   `h1: mixin link("twitter", "Follow us", "#")`
+
+//- * Advanced usage
+//-   `h1: +link(0, "Tab 2", "#tab-2")(data-toggle="tab", data-…).class-name#ID`
+
+//- * Usage with Title ≠ Text : a mailto (display the mail, but keep the title)
+//-   +link(0, "Contact John Doe", "mailto:john@doe.com", "john@doe.com");
+
+//- -----------------------------------------
+
+mixin link(icon, title, href, text)
+  - if (typeof(href) === 'undefined') href="#"
+  - if (typeof(text) === 'undefined') text=title;
+  - if (!icon){
+      a(href="#{href}", title="#{title}", attributes)!=text
+  - }else{
+      a(href="#{href}", title="#{title}", attributes)
+        span(class="#{icon}")
+        span!=text
+  - }

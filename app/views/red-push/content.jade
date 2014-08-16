@@ -1,0 +1,82 @@
+include ../red-app/mixins/all
+
+section.red-push
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1.text-center
+
+        div(itemscope='itemscope', itemtype='http://schema.org/Person')
+          div(itemprop='name')
+            h4
+              strong(id='name') MAHMAL Sami
+          div(itemprop='jobtitle',id='jobtitle') Geek
+          div(itemprop='address', itemscope='itemscope', itemtype='http://schema.org/PostalAddress')
+            div(itemprop='addressLocality') Paris
+              span(itemprop='addressCountry'), France
+
+          div
+            meta(itemprop='birthDate', content='1988-10-01')
+          
+          ul.list-unstyled
+            li
+              i.fa.fa-phone.fa-fw
+              a(id='tel',class='unstyled',href='tel:0033624445420')
+            li
+              i.fa.fa-envelope-o.fa-fw
+              a(href='mailto:mahmalsami@gmail.com?Subject=Contact%20from%20mahmalsami.com',id='email')
+        br
+        ul.list-inline
+          li
+            a(href='https://www.facebook.com/mahmal.sami')
+              i.fa.fa-facebook.fa-fw.fa-3x
+          li
+            a(href='https://twitter.com/mahmalsami')
+              i.fa.fa-twitter.fa-fw.fa-3x
+          li
+            a(href='https://plus.google.com/101081461523676704744')
+              i.fa.fa-google-plus.fa-fw.fa-3x
+          li
+            a(href='https://fr.linkedin.com/in/mahmalsami')
+              i.fa.fa-linkedin.fa-fw.fa-3x
+           li
+            a(href='https://github.com/mahmalsami')
+              i.fa.fa-github-alt.fa-fw.fa-3x
+        hr.small
+
+
+        //- h4(itemprop='name')
+        //-   strong Mahmal Sami
+        //- p
+        //-   | Geek
+        //-   br
+        //-   | Beverly Hills, CA 90210
+        //- ul.list-unstyled
+        //-   li
+        //-     i.fa.fa-phone.fa-fw
+        //-     | (123) 456-7890
+        //-   li
+        //-     i.fa.fa-envelope-o.fa-fw
+        //-     a(href='mailto:name@example.com') name@example.com
+        //- br
+        //- ul.list-inline
+        //-   li
+        //-     a(href='#')
+        //-       i.fa.fa-facebook.fa-fw.fa-3x
+        //-   li
+        //-     a(href='#')
+        //-       i.fa.fa-twitter.fa-fw.fa-3x
+        //-   li
+        //-     a(href='#')
+        //-       i.fa.fa-google-plus.fa-fw.fa-3x
+        //-   li
+        //-     a(href='#')
+        //-       i.fa.fa-linkedin.fa-fw.fa-3x
+        //-    li
+        //-     a(href='#')
+        //-       i.fa.fa-github-alt.fa-fw.fa-3x
+        //- hr.small
+        //- p.text-muted Copyright © Your Website 2014
+
+
+
+

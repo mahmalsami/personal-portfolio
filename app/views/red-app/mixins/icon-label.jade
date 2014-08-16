@@ -1,0 +1,12 @@
+
+//- # ICON LABEL MIXIN
+
+//- A mixin to create labels with icons
+//- The mixin's attributes, if present, are applied on span wrapper element.
+
+//- -----------------------------------------
+
+mixin icon-label(icon, title)
+  span(attributes)
+    span(class="fa fa-#{icon}")
+    span=title

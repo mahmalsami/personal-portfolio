@@ -1,0 +1,27 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.1",
+  "authors": [
+    "DIGITAS France <mahmalsami@gmail.com>"
+  ],
+  "description": "personal portfolio",
+  "main": "app/server.js",
+  "license": "MIT",
+  "homepage": "https://github.digitas.fr/html/renault-edison",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "bootstrap": "~3.0.0",
+    "font-awesome": "v4.0.3"
+  },
+  "devDependencies": {
+    "modernizr": "~2.6.2"
+  }
+}

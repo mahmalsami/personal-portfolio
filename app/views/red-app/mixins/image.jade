@@ -1,0 +1,9 @@
+
+//- # PLACEHOLDR IMAGE MIXIN
+
+//- A mixin to create placeholders
+//- -----------------------------------------
+
+mixin image(width, height, alt)
+  - if(!alt) alt="Description de l'image.."
+  img(src="https://lorempixel.com/#{width}/#{height}/city", alt="#{alt}", title="#{alt}", attributes)

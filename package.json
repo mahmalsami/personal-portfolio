@@ -1,0 +1,57 @@
+{
+  "name": "renault-edison",
+  "title": "Renault Edison",
+  "description": "Renault Edison, started with Made",
+  "version": "0.0.1",
+  "homepage": "https://github.digitas.fr/html/renault-edison",
+  "author": {
+    "name": "DIGITAS France",
+    "email": "frontend@digitas.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.digitas.fr:html/renault-edison.git"
+  },
+  "bugs": {
+    "url": "https://github.digitas.fr/html/renault-edison/issues"
+  },
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "subDependencies": [
+    "red-header",
+    "red-footer",
+    "red-caroussel",
+    "red-form",
+    "red-animated",
+    "red-gallery",
+    "red-playlist",
+    "red-share",
+    "red-blogeuse",
+    "red-push",
+    "red-socialbar"
+  ],
+  "dependencies": {
+    "express": "3.3.4",
+    "jade": "~0.30.0"
+  },
+  "devDependencies": {
+    "matchdep": "~0.3.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-jade": "0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-notify": "~0.2.17",
+    "grunt-shell": "~0.3.1",
+    "grunt-concurrent": "~0.3.0",
+    "grunt-nodemon": "0.0.8",
+    "grunt-usemin": "~2.0.2",
+    "usemin-patterns": "~0.1.3"
+  }
+}

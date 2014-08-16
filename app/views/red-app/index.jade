@@ -1,0 +1,14 @@
+extends ../layouts/app-layout-full
+
+block variables
+  - title= "Templates"
+
+block content
+  #tpl
+    style.
+      #tpl{margin-top:20px}
+      #tpl a{text-decoration:none; background:#dedede; display:block; padding:20px; font-size:2em; color:#111; line-height:1; margin-bottom:20px}
+      #tpl a:hover{background:#eee}
+      #tpl .ico{padding-right:15px}
+    .container
+      .row: .col-sm-12: +link("home", "Home", "home.html")

@@ -1,0 +1,18 @@
+# Folders to ignore
+.hg
+.svn
+.CVS
+.idea
+node_modules
+dist
+build
+public
+release
+temp
+tmp
+
+app/assets/red-app/vendor/*/
+
+# node monitor
+.nodemonignore
+
