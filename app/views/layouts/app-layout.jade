@@ -28,13 +28,6 @@ html(class="no-js", lang="fr", appcache=appcache)
     link(rel="stylesheet", href="stylesheets/red-app.css")
     // endbuild
 
-    // build:css stylesheets/red-header.min.css
-    link(rel="stylesheet", href="stylesheets/red-header.css")
-    // endbuild
-    // build:css stylesheets/red-footer.min.css
-    link(rel="stylesheet", href="stylesheets/red-footer.css")
-    // endbuild
-
     block module-stylesheets
       each module in modules
         +banner('build:css stylesheets/' + module + '.min.css')
