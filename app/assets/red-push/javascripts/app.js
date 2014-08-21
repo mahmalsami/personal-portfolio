@@ -1,7 +1,6 @@
 (function ($, App) { "use strict";
 
   $(function () {
-    console.log('red-push log');
     var jobTitles=['Swat Team Manager','Digital Consultant','Creative Technologist Manager','Geek','Software Engineer'];
 
     var card= $('section[class="red-push"]');
